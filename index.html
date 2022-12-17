@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Математический анализ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="p5/p5.js"></script>
+    <script src="p5/bubbles.js"></script>
+  </head>
+
+  <body
+    class="overflow:hidden;"
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
+    <nav>
+      <div class="hamburger" id="toggle-menu">
+        <div class="line" style="background-color: white"></div>
+        <div class="line" style="background-color: white"></div>
+        <div class="line" style="background-color: white"></div>
+      </div>
+      <div class="side-menu" id="main-menu">
+        <ul>
+          <li class="sub-menu">
+            <a href="#"
+              >Равномерная по параметру сходимость функции<img
+                src="icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li>
+                <a
+                  href="Интегралы, зависящие от параметра/1.1. Основные понятия.html"
+                  >Основные понятия</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Интегралы, зависящие от параметра/1.2. Свойства равномерно сходящихся функций.html"
+                  >Свойства</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#"
+              >Интегралы, зависящие от параметра<img
+                src="icons/down.png"
+                class="submenu-icon submenu-trigger"
+            /></a>
+            <ul>
+              <li class="sub-menu">
+                <a href="#"
+                  >Собственные интегралы<img
+                    src="icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+					<li>
+                    <a
+                      href="Интегралы, зависящие от параметра/2.1. Собственные интегралы.html"
+                      >Определение</a
+                    >
+                  </li>
+
+                  <li class="sub-menu">
+                    <a href="#"
+                    >Свойства<img
+                    src="icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                    /></a>
+                    <ul>
+                      <li>
+                        <a
+                          href="Интегралы, зависящие от параметра/2.1. Свойства собственных интегралов.html#nepreriv"
+                          >Непрерывность и предельный переход</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="Интегралы, зависящие от параметра/2.1. Свойства собственных интегралов.html#integr"
+                          >Интегрируемость</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="Интегралы, зависящие от параметра/2.1. Свойства собственных интегралов.html#diff"
+                          >Дифференцируемость</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+                    
+ 
+              <li class="sub-menu">
+                <a href="#"
+                >Несобственные интегралы<img
+                src="icons/down.png"
+                class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.1. Основные определения.html"
+                    >Определение</a
+                    >
+                  </li>
+
+                  <li class="sub-menu">
+                    <a href="#"
+                    >Равномерная сходимость<img
+                    src="icons/down.png"
+                    class="submenu-icon submenu-trigger"
+                    /></a>
+                    <ul>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.2. Равномерная сходимость несобственных интегралов.html"
+                    >Определение</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.3. Признаки равномерной сходимости.html"
+                    >Признаки</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.4. Свойства равномерной сходимости.html"
+                    >Свойства</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-menu">
+                <a href="#"
+                >Свойства<img
+                src="icons/down.png"
+                class="submenu-icon submenu-trigger"
+                /></a>
+                <ul>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.4. Свойства равномерно сходящихся интегралов.html#lim"
+                    >Предельный переход</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.4. Свойства равномерно сходящихся интегралов.html#nepreriv"
+                    >Непрерывность</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.4. Свойства равномерно сходящихся интегралов.html#diff"
+                    >Дифференцируемость</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="Интегралы, зависящие от параметра/2.2.4. Свойства равномерно сходящихся интегралов.html#integr"
+                    >Интегрируемость</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              </ul>
+                <li>
+                  <a
+                    href="Интегралы, зависящие от параметра/2.3. Интегралы Эйлера.html"
+                    >Интегралы Эйлера</a
+                  >
+                </li>
+				<li>
+                  <a
+                    href="Интегралы, зависящие от параметра/2.4 Технологии вычисления.html"
+                    >Технологии вычисления</a
+                  >
+                </li>
+				<li>
+                  <a
+                    href="Интегралы, зависящие от параметра/4.0 Применение для вычисления собственных и несобственных интегралов.html"
+                    >Применение для вычисления собственных<br> и несобственных интегралов</a
+                  >
+                </li>
+				<li>
+                  <a
+                    href="Интегралы, зависящие от параметра/Приложение.html"
+                    >Приложение</a
+                  >
+                </li>
+              </li>
+            </ul>
+		  		<li>
+                  <a
+                    href="Интегралы, зависящие от параметра/5.0 Задачи для самостоятельного изучения.html"
+                    >Задачи для самостоятельного изучения</a
+                  >
+                </li>
+		  		<li>
+                  <a
+                    href="Интегралы, зависящие от параметра/Литература.html"
+                    >Литература</a
+                  >
+                </li>
+          </li>
+          <div id="level" class="container">
+        </ul>
+      </div>
+    </nav>
+    <main class="main" style="margin: 0; height: 100vh; width: 100vw">
+		<style>
+			.topnav {
+				background-color: #3A3A3A;
+				overflow: visible;
+				padding: 0;
+				margin: 0;
+			}
+
+			.textcols-left {
+				background-color: #3A3A3A;
+				overflow: inherit;
+				display: inline-block;
+				float: left;
+				width: 60%;
+				font-size: 24px;
+				font-weight: 900;
+				text-align: right;
+				padding: 5px 7px;
+				color: #f2f2f2;
+			}
+			.textcols-right {
+				overflow: inherit;
+				display: inline-block;
+				float: right;
+				width: 40%;
+				font-size: 16px;
+				text-align: right;
+				padding-right: 20px;
+				background-color: #3A3A3A;
+				padding-top: 12px;
+				padding-bottom: 5px;
+				color: #f2f2f2;
+							
+			}
+		</style>
+		
+
+<div class="topnav">
+  <span  class="textcols-left">Зависящие от параметра интегралы</span>
+  <span  class = "textcols-right"> <a class="tooltip-2">Инструкция
+	  <span class="textcols-right classic" style="z-index: 100; text-align: left">
+		  <p style = "color: white; font-weight: 600">
+			Инструкция по работе с сайтом
+		  </p>
+			<p style = "color: white; font-size: 16px">
+		  		1. Рекомендуется читать сайт на компьютере<br> 
+				2. Рекомендуемый масштаб страницы: 100-120%<br> 
+				3. Для лучшего усвоения информации сначала нужно прочитать <br>&nbsp;&nbsp;&nbsp;&nbsp;полностью минимальный уровень, а потом средний<br> 
+				4. Синий текст, подчеркнутый внизу, означает, что при наведении на него,<br> &nbsp;&nbsp;&nbsp;&nbsp; можно прочитать скрытую информацию<br> 
+				5. При прочтении примеров рекомендуется попробовать решить <br>  &nbsp;&nbsp;&nbsp;&nbsp;их самостоятельно и сравнить с ответом<br> 
+		  	</p>
+	  </span>
+	  </a>
+ </span>
+</div>
+	</main>
+	
+    <script src="main.js"></script>
+  </body>
+</html>
